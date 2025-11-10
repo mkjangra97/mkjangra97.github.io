@@ -216,9 +216,9 @@ img {
 .home__blob {
   fill: var(--first-color);
 }
-.home__blob-img {
+/* .home__blob-img {
   width: 360px;
-}
+} */
 
 /*BUTTONS*/
 .button {
@@ -482,5 +482,111 @@ img {
   }
   .home__img {
     width: 450px;
+  }
+}
+
+/* ============================================= */
+/* 🎯 GITHUB PROJECTS SECTION (Custom Upgrade)   */
+/* ============================================= */
+
+#work {
+  text-align: center;
+  padding-top: 4rem;
+  padding-bottom: 3rem;
+}
+
+#github-projects {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 1.5rem;
+  max-width: 1000px;
+  margin: 0 auto;
+  padding-top: 2rem;
+}
+
+/* ===== Card Styling ===== */
+.work__card {
+  display: block;
+  background-color: rgba(255, 255, 255, 0.05);
+  border: 1.5px solid rgba(146, 161, 176, 0.2);
+  border-radius: 0.75rem;
+  padding: 1.5rem;
+  text-align: left;
+  color: var(--second-color);
+  text-decoration: none;
+  transition: all 0.3s ease;
+  background: #fff;
+  box-shadow: 0 4px 15px rgba(14, 36, 49, 0.08);
+}
+
+body.dark-theme .work__card {
+  background-color: var(--second-color);
+  color: #fff;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.work__card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 10px 20px rgba(14, 36, 49, 0.15);
+  border-color: var(--first-color);
+}
+
+/* ===== Card Content ===== */
+.work__title {
+  font-size: 1.05rem;
+  font-weight: 600;
+  color: var(--first-color);
+  margin-bottom: 0.4rem;
+}
+
+.work__desc {
+  font-size: 0.9rem;
+  color: #6b7280;
+  margin-bottom: 0.8rem;
+  line-height: 1.5;
+}
+
+body.dark-theme .work__desc {
+  color: #cbd5e1;
+}
+
+/* ===== Meta info ===== */
+.work__meta {
+  display: flex;
+  justify-content: space-between;
+  font-size: 0.85rem;
+  border-top: 1px solid rgba(0, 0, 0, 0.08);
+  padding-top: 0.6rem;
+  color: #64748b;
+}
+
+body.dark-theme .work__meta {
+  color: #94a3b8;
+  border-top: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.work__meta span {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+}
+
+/* ===== Loading / Error States ===== */
+.loading-text,
+.error-text {
+  grid-column: 1 / -1;
+  font-style: italic;
+  font-size: 0.9rem;
+  color: #6b7280;
+}
+
+/* ===== Responsive ===== */
+@media screen and (max-width: 768px) {
+  #github-projects {
+    grid-template-columns: 1fr;
+  }
+
+  .work__card {
+    padding: 1.2rem;
   }
 }
