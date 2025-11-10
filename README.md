@@ -1,4 +1,4 @@
-# 🌐 Manish Kumar — DevOps Engineer Portfolio
+# 🌐 DevOps Engineer Portfolio
 
 Welcome to my personal portfolio website!  
 This site highlights my DevOps journey, skills, and projects — built with a clean, responsive design and powered by GitHub Pages.
