@@ -1,115 +1,152 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
+  <!-- Essentials -->
+  <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>Manish Kumar — DevOps Engineer</title>
-  <meta name="description" content="Manish Kumar — DevOps Engineer | Cloud • Containers • CI/CD" />
+  <meta name="description" content="Manish Kumar — DevOps Engineer focused on Cloud, Containers, CI/CD and automation." />
   <meta name="theme-color" content="#0b1220" />
 
+  <!-- Open Graph / Twitter -->
   <meta property="og:title" content="Manish Kumar — DevOps Engineer" />
   <meta property="og:description" content="Cloud • Containers • CI/CD • Automation" />
   <meta property="og:image" content="https://avatars.githubusercontent.com/u/37129596?v=4" />
   <meta property="og:type" content="website" />
+  <meta name="twitter:card" content="summary_large_image" />
 
+  <!-- Fonts: Ubuntu -->
   <link rel="preconnect" href="https://fonts.googleapis.com" crossorigin>
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@300;400;500;700&display=swap" rel="stylesheet">
 
+  <!-- Favicon -->
   <link rel="icon" href="https://avatars.githubusercontent.com/u/37129596?v=4" />
+
+  <!-- Styles & Scripts -->
   <link rel="stylesheet" href="style.css" />
   <script defer src="script.js"></script>
-  <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
-  <script src="https://cdn.jsdelivr.net/npm/emailjs-com@3/dist/email.min.js"></script>
 
+  <!-- 3P (loaded by script.js when needed) -->
+  <!-- <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js" defer></script>
+  <script src="https://cdn.jsdelivr.net/npm/emailjs-com@3/dist/email.min.js" defer></script> -->
+
+  <!-- JSON-LD -->
   <script type="application/ld+json">
   {
-    "@context": "https://schema.org",
-    "@type": "Person",
-    "name": "Manish Kumar",
-    "jobTitle": "DevOps Engineer",
-    "image": "https://avatars.githubusercontent.com/u/37129596?v=4",
-    "url": "https://mkjangra97.github.io",
-    "sameAs": ["https://github.com/mkjangra97", "https://www.linkedin.com/in/manishjangra97", "mailto:manishjangra97@gmail.com"]
+    "@context":"https://schema.org",
+    "@type":"Person",
+    "name":"Manish Kumar",
+    "jobTitle":"DevOps Engineer",
+    "image":"https://avatars.githubusercontent.com/u/37129596?v=4",
+    "url":"https://mkjangra97.github.io",
+    "sameAs":[
+      "https://github.com/mkjangra97",
+      "https://www.linkedin.com/in/manishjangra97",
+      "mailto:manishjangra97@gmail.com"
+    ]
   }
   </script>
 </head>
 <body>
-  <div class="noise" aria-hidden="true"></div>
+  <!-- Minimal premium background will come from CSS -->
+  <div class="bg-noise" aria-hidden="true"></div>
 
-  <header class="nav glass">
-    <a class="brand" href="#hero" aria-label="Go to hero"><span class="dot">●</span> MK</a>
-    <nav>
+  <!-- Header / Nav -->
+  <header class="nav">
+    <a class="brand" href="#home" aria-label="Go to home">
+      <span class="brand-dot">●</span> MK
+    </a>
+    <nav class="nav-links" aria-label="Primary">
       <a href="#about">About</a>
       <a href="#skills">Skills</a>
       <a href="#projects">Projects</a>
       <a href="#contact">Contact</a>
-      <button id="theme-toggle" class="tbtn" aria-label="Toggle theme">🌙</button>
+      <button id="theme-toggle" class="tbtn" aria-label="Toggle theme" title="Toggle theme">🌙</button>
     </nav>
   </header>
 
-  <main id="hero" class="section hero">
-    <div class="hero-card glass elevate">
-      <img src="https://avatars.githubusercontent.com/u/37129596?v=4" alt="Portrait of Manish Kumar" class="avatar" width="160" height="160" loading="eager" decoding="async" />
+  <!-- Hero -->
+  <main id="home" class="section hero">
+    <article class="hero-card">
+      <img
+        src="https://avatars.githubusercontent.com/u/37129596?v=4"
+        alt="Portrait of Manish Kumar"
+        class="avatar" width="168" height="168" loading="eager" decoding="async"
+      />
       <h1 class="title">Manish Kumar</h1>
-      <p class="tagline">DevOps Engineer • Cloud • Containers • CI/CD</p>
+      <p class="subtitle">DevOps Engineer • Cloud • Containers • CI/CD</p>
+
       <div class="cta">
         <a class="btn primary" href="#projects">View Projects</a>
         <button class="btn ghost" id="open-resume">Resume</button>
       </div>
-      <div class="links">
-        <a href="https://github.com/mkjangra97" target="_blank" rel="noopener">GitHub</a>
-        <span>·</span>
-        <a href="https://linkedin.com/in/manishjangra97" target="_blank" rel="noopener">LinkedIn</a>
-        <span>·</span>
-        <a href="mailto:manishjangra97@gmail.com">Email</a>
-      </div>
-    </div>
+
+      <ul class="quick-links" role="list">
+        <li><a href="https://github.com/mkjangra97" target="_blank" rel="noopener">GitHub</a></li>
+        <li aria-hidden="true">·</li>
+        <li><a href="https://linkedin.com/in/manishjangra97" target="_blank" rel="noopener">LinkedIn</a></li>
+        <li aria-hidden="true">·</li>
+        <li><a href="mailto:manishjangra97@gmail.com">Email</a></li>
+      </ul>
+    </article>
   </main>
 
+  <!-- About -->
   <section id="about" class="section fade">
-    <div class="container glass elevate">
+    <div class="container">
       <h2 class="h2">About</h2>
       <p class="lead">
-        I build reliable delivery pipelines and cloud-native platforms. Automation-first mindset,
-        observability by default, and secure-by-design infrastructure so teams ship faster with confidence.
+        I help teams ship faster with reliable delivery pipelines and cloud-native platforms.
+        I focus on automation, observability, and secure-by-design infrastructure.
       </p>
-    </div>
-  </section>
-
-  <section id="skills" class="section fade">
-    <div class="container glass elevate">
-      <h2 class="h2">Skills & Tools</h2>
-      <ul class="chips">
-        <li>Linux</li><li>Docker</li><li>Kubernetes</li><li>AWS</li>
-        <li>GitHub Actions</li><li>Terraform</li><li>Ansible</li><li>CI/CD</li>
-        <li>Prometheus</li><li>Grafana</li><li>NGINX</li><li>Helm</li>
+      <ul class="points">
+        <li>Infra as Code (Terraform), GitOps workflows</li>
+        <li>Docker & Kubernetes in production environments</li>
+        <li>CI/CD with GitHub Actions, rollback strategies</li>
       </ul>
     </div>
   </section>
 
+  <!-- Skills -->
+  <section id="skills" class="section fade">
+    <div class="container">
+      <h2 class="h2">Skills & Tools</h2>
+      <ul class="chips" role="list">
+        <li>Linux</li><li>Docker</li><li>Kubernetes</li><li>AWS</li>
+        <li>GitHub Actions</li><li>Terraform</li><li>Ansible</li><li>CI/CD</li>
+        <li>Prometheus</li><li>Grafana</li><li>Helm</li><li>NGINX</li>
+      </ul>
+    </div>
+  </section>
+
+  <!-- Projects -->
   <section id="projects" class="section fade">
-    <div class="container glass elevate">
+    <div class="container">
       <div class="row">
         <h2 class="h2">Projects</h2>
         <a class="btn tiny" href="https://github.com/mkjangra97?tab=repositories" target="_blank" rel="noopener">See all →</a>
       </div>
+
+      <!-- Skeletons (filled by JS) -->
       <div id="github-projects" class="grid">
-        <article class="card skeleton"></article>
-        <article class="card skeleton"></article>
-        <article class="card skeleton"></article>
-        <article class="card skeleton"></article>
-        <article class="card skeleton"></article>
-        <article class="card skeleton"></article>
+        <article class="card skeleton" aria-hidden="true"></article>
+        <article class="card skeleton" aria-hidden="true"></article>
+        <article class="card skeleton" aria-hidden="true"></article>
+        <article class="card skeleton" aria-hidden="true"></article>
+        <article class="card skeleton" aria-hidden="true"></article>
+        <article class="card skeleton" aria-hidden="true"></article>
       </div>
     </div>
   </section>
 
+  <!-- Contact -->
   <section id="contact" class="section fade">
-    <div class="container glass elevate">
+    <div class="container">
       <h2 class="h2">Let’s Build Something</h2>
-      <p class="lead">Got an idea, role, or collaboration? I’d love to talk.</p>
-      <form id="contact-form" class="form">
+      <p class="lead">Have a role, idea, or collaboration? Drop me a line.</p>
+
+      <form id="contact-form" class="form" novalidate>
         <div class="field">
           <label for="name">Name</label>
           <input id="name" name="name" type="text" required placeholder="Your name" />
@@ -123,22 +160,25 @@
           <textarea id="message" name="message" rows="4" required placeholder="How can I help?"></textarea>
         </div>
         <button type="submit" class="btn primary">Send</button>
-        <small class="muted">Powered by EmailJS. Configure keys in <code>script.js</code>.</small>
+        <small class="muted">Form uses EmailJS (configure keys in <code>script.js</code>).</small>
       </form>
     </div>
   </section>
 
+  <!-- Footer -->
   <footer class="footer">
-    <p>© <span id="year"></span> Manish Kumar. Ubuntu type, crafted for speed.</p>
+    <p>© <span id="year"></span> Manish Kumar</p>
   </footer>
 
+  <!-- Resume Modal -->
   <dialog id="resume-modal" class="modal">
-    <div class="modal-inner glass elevate">
+    <div class="modal-inner">
       <header class="modal-head">
         <h3>Resume — Manish Kumar</h3>
         <button id="close-resume" class="xbtn" aria-label="Close">✕</button>
       </header>
       <div class="modal-body">
+        <!-- Placeholder resume.pdf; replace later -->
         <iframe src="resume.pdf" title="Resume PDF" loading="lazy"></iframe>
       </div>
       <footer class="modal-foot">
@@ -147,8 +187,9 @@
     </div>
   </dialog>
 
+  <!-- Project Modal -->
   <dialog id="project-modal" class="modal">
-    <div class="modal-inner glass elevate">
+    <div class="modal-inner">
       <header class="modal-head">
         <h3 id="pm-title">Project</h3>
         <button id="close-project" class="xbtn" aria-label="Close">✕</button>
